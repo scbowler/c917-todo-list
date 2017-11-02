@@ -17,3 +17,10 @@ export function addTodo(item){
         payload: item
     }
 }
+
+export function deleteTodo(index){
+    return {
+        type: types.DELETE_TODO,
+        payload: index
+    }
+}
